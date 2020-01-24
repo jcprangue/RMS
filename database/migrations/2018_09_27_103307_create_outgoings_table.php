@@ -19,8 +19,19 @@ class CreateOutgoingsTable extends Migration
             $table->date('date_receive');
             $table->integer('office');
             $table->text('particulars');
+            $table->integer('category');
             $table->decimal('amount');
+            $table->string('check_no');
+            $table->string('payee');
+            $table->string('supplier');
+            $table->string('type_leave');
+            $table->text('date_leave');
+            $table->integer('fa_category');
             $table->text('remarks');
+            $table->integer('status');
+            $table->dateTime('verified');
+            $table->string('verified_by');
+            $table->dateTime('deleted_at');
 
             $table->timestamps();
         });

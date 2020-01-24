@@ -16,6 +16,7 @@ class CreateTableFaCategory extends Migration
         Schema::create('fa_category', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type_fa');
+            $table->string('nick');
             $table->timestamps();
         });
     }
